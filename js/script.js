@@ -73,7 +73,7 @@ toggleBtns.forEach(btn => {
 //membership CTA button animation
 document.addEventListener('DOMContentLoaded', () => {
     const chevronBtn = document.querySelector('.chevron-btn');
-    const plansCTA = document.querySelector('.plans-CTA');
+    const plansCTA = document.querySelector('.plans-CTA, .training-CTA');
 
     if (chevronBtn && plansCTA) {
         const observer = new IntersectionObserver((entries) => {
