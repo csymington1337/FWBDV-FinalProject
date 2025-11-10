@@ -504,7 +504,7 @@ ul li {
   text-align: center;
 }
 
-#classes .classes-container {
+#classes .classes-text {
   padding: 0 15px 30px 15px;
 }
 
@@ -522,7 +522,7 @@ ul li {
   text-align: center;
 }
 
-#training .training-container {
+#training .training-text {
   padding: 0 15px 30px 15px;
 }
 
@@ -686,7 +686,7 @@ ul li {
     border-radius: 4px;
     overflow: hidden;
     min-height: 250px;
-    padding: 8% 3%;
+    padding: 8% 0;
   }
 
   #classes .classes-photo {
@@ -720,7 +720,7 @@ ul li {
     border-radius: 4px;
     overflow: hidden;
     min-height: 250px;
-    padding: 8% 3%;
+    padding: 8% 0;
   }
 
   #training .training-photo {
