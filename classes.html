@@ -1,0 +1,362 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="description" content="IronPulse Fitness">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>IronPulse Fitness | Gym and Wellness Center</title>
+
+        <meta name="description" content="Fitness Community">
+
+        <meta property="og:title" content="IronPulse Fitness | Gym and Wellness Center">
+        <meta property="og:type" content="website">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Sofia+Sans+Extra+Condensed:ital,wght@0,1..1000;1,1..1000&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/classesstyles.css">
+    </head>
+
+    <body>
+
+    <header>
+        <!---------HEADER---------->
+        <section id="header">
+            <div class="header-container">
+                <div class="nav-bar">
+                    <div class="brand"><img src="img/logo-largewhite.png" alt="IronPulse Fitness Logo"></div>
+                        <div class="nav-links">
+                            <div class="hamburger">
+                                <div class="bar"></div>
+                        </div><!--hamburger ends-->
+                        <ul>
+                            <li><a href="index.html" data-after="Home">Home</a></li>
+                            <li><a href="membership.html" data-after="Membership">Membership</a></li>
+                            <li><a href="classes.html" data-after="Classes">Classes</a></li>
+                            <li><a href="training.html" data-after="Training">Training</a></li>
+                            <li><a href="nutrition.html" data-after="Nutrition">Nutrition</a></li>
+                            <li><a href="about.html" data-after="About">About</a></li>
+                            <li><a href="contact.html" data-after="Contact">Contact</a></li>
+                        </ul>
+                    </div><!--nav-links ends-->
+                </div><!--nav-bar ends-->
+            </div><!--header-container ends-->
+        </section>
+    </header>
+
+    <main>
+        <!-----HEADING------>
+
+        <section id="heading">
+            <div class="heading-container">
+                    <h2>Find Your Flow. <br>Fuel Your Fire.</h2>
+                    <p>Every class at IronPulse is designed to push limits and build confidence. With expert coaches, smart programming, and an electric atmosphere, you'll leave stronger, sharper, and more energized than when you walked in.</p>
+            </div><!--heading-container ends-->
+        </section>
+
+        <section id="schedule">
+            <div class="schedule-container">
+                <h2>Class Schedule</h2>
+                
+                <!-- Day Toggle Buttons -->
+                <div class="day-toggle">
+                    <button class="day-btn" data-day="sunday">Sun</button>
+                    <button class="day-btn" data-day="monday">Mon</button>
+                    <button class="day-btn" data-day="tuesday">Tue</button>
+                    <button class="day-btn" data-day="wednesday">Wed</button>
+                    <button class="day-btn" data-day="thursday">Thu</button>
+                    <button class="day-btn" data-day="friday">Fri</button>
+                    <button class="day-btn" data-day="saturday">Sat</button>
+                </div>
+
+                <!-- Schedule Tables for Each Day -->
+                <div class="schedule-table-container">
+                    <!-- Sunday -->
+                    <div class="schedule-day" data-day="sunday">
+                        <table class="schedule-table">
+                            <thead>
+                                <tr><!--header row-->
+                                    <th>Class</th>
+                                    <th>Time</th>
+                                    <th>Length</th>
+                                    <th>Instructor</th>
+                                    <th>Book</th>
+                                </tr><!--header row ends-->
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><span>Balance</span>Yoga Flow</td>
+                                    <td>11:00 AM</td>
+                                    <td>60 min</td>
+                                    <td>Maya</td>
+                                    <td><button class="book-btn">Book</button></td>
+                                </tr>
+                                <tr>
+                                    <td><span>Strength</span>Pilates</td>
+                                    <td>1:00 PM</td>
+                                    <td>45 min</td>
+                                    <td>Elise</td>
+                                    <td><button class="book-btn">Book</button></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <!-- Monday -->
+                    <div class="schedule-day" data-day="monday">
+                        <table class="schedule-table">
+                            <thead>
+                                <tr>
+                                    <th>Class</th>
+                                    <th>Time</th>
+                                    <th>Length</th>
+                                    <th>Instructor</th>
+                                    <th>Book</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><span>Surge</span>HIIT Cardio</td>
+                                    <td>8:00 AM</td>
+                                    <td>45 min</td>
+                                    <td>Dani</td>
+                                    <td><button class="book-btn">Book</button></td>
+                                </tr>
+                                <tr>
+                                    <td><span>Drive</span>Spin Class</td>
+                                    <td>12:00 PM</td>
+                                    <td>45 min</td>
+                                    <td>Lexi</td>
+                                    <td><button class="book-btn">Book</button></td>
+                                </tr>
+                                <tr>
+                                    <td><span>Balance</span>Yoga Flow</td>
+                                    <td>6:00 PM</td>
+                                    <td>60 min</td>
+                                    <td>Maya</td>
+                                    <td><button class="book-btn">Book</button></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <!-- Tuesday -->
+                    <div class="schedule-day" data-day="tuesday">
+                        <table class="schedule-table">
+                            <thead>
+                                <tr>
+                                    <th>Class</th>
+                                    <th>Time</th>
+                                    <th>Length</th>
+                                    <th>Instructor</th>
+                                    <th>Book</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><span>Core Circuit</span>Functional Training</td>
+                                    <td>8:00 AM</td>
+                                    <td>60 min</td>
+                                    <td>Riley</td>
+                                    <td><button class="book-btn">Book</button></td>
+                                </tr>
+                                <tr>
+                                    <td><span>Impact</span>Craft Boxing</td>
+                                    <td>2:30 PM</td>
+                                    <td>45 min</td>
+                                    <td>Jordan</td>
+                                    <td><button class="book-btn">Book</button></td>
+                                </tr>
+                                <tr>
+                                    <td><span>Balance</span>Yoga Flow</td>
+                                    <td>5:00 PM</td>
+                                    <td>30 min</td>
+                                    <td>Maya</td>
+                                    <td><button class="book-btn">Book</button></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <!-- Wednesday -->
+                    <div class="schedule-day" data-day="wednesday">
+                        <table class="schedule-table">
+                            <thead>
+                                <tr>
+                                    <th>Class</th>
+                                    <th>Time</th>
+                                    <th>Length</th>
+                                    <th>Instructor</th>
+                                    <th>Book</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><span>Surge</span>HIIT Cardio</td>
+                                    <td>8:00 AM</td>
+                                    <td>45 min</td>
+                                    <td>Dani</td>
+                                    <td><button class="book-btn">Book</button></td>
+                                </tr>
+                                <tr>
+                                    <td><span>Strength</span>Pilates</td>
+                                    <td>12:00 PM</td>
+                                    <td>45 min</td>
+                                    <td>Elise</td>
+                                    <td><button class="book-btn">Book</button></td>
+                                </tr>
+                                <tr>
+                                    <td><span>Drive</span>Spin Class</td>
+                                    <td>6:00 PM</td>
+                                    <td>45 min</td>
+                                    <td>Lexi</td>
+                                    <td><button class="book-btn">Book</button></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <!-- Thursday -->
+                    <div class="schedule-day" data-day="thursday">
+                        <table class="schedule-table">
+                            <thead>
+                                <tr>
+                                    <th>Class</th>
+                                    <th>Time</th>
+                                    <th>Length</th>
+                                    <th>Instructor</th>
+                                    <th>Book</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><span>Core Circuit</span>Functional Training</td>
+                                    <td>8:00 AM</td>
+                                    <td>60 min</td>
+                                    <td>Riley</td>
+                                    <td><button class="book-btn">Book</button></td>
+                                </tr>
+                                <tr>
+                                    <td><span>Balance</span>Yoga Flow</td>
+                                    <td>3:30 PM</td>
+                                    <td>60 min</td>
+                                    <td>Maya</td>
+                                    <td><button class="book-btn">Book</button></td>
+                                </tr>
+                                <tr>
+                                    <td><span>Impact</span>Craft Boxing</td>
+                                    <td>5:00 PM</td>
+                                    <td>45 min</td>
+                                    <td>Jordan</td>
+                                    <td><button class="book-btn">Book</button></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <!-- Friday -->
+                    <div class="schedule-day" data-day="friday">
+                        <table class="schedule-table">
+                            <thead>
+                                <tr>
+                                    <th>Class</th>
+                                    <th>Time</th>
+                                    <th>Length</th>
+                                    <th>Instructor</th>
+                                    <th>Book</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><span>Surge</span>HIIT Cardio</td>
+                                    <td>8:00 AM</td>
+                                    <td>45 min</td>
+                                    <td>Dani</td>
+                                    <td><button class="book-btn">Book</button></td>
+                                </tr>
+                                <tr>
+                                    <td><span>Drive</span>Spin Class</td>
+                                    <td>12:00 PM</td>
+                                    <td>45 min</td>
+                                    <td>Lexi</td>
+                                    <td><button class="book-btn">Book</button></td>
+                                </tr>
+                                <tr>
+                                    <td><span>Balance</span>Yoga Flow</td>
+                                    <td>6:00 PM</td>
+                                    <td>60 min</td>
+                                    <td>Maya</td>
+                                    <td><button class="book-btn">Book</button></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <!-- Saturday -->
+                    <div class="schedule-day" data-day="saturday">
+                        <table class="schedule-table">
+                            <thead>
+                                <tr>
+                                    <th>Class</th>
+                                    <th>Time</th>
+                                    <th>Length</th>
+                                    <th>Instructor</th>
+                                    <th>Book</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><span>Core Circuit</span>Functional Training</td>
+                                    <td>11:00 AM</td>
+                                    <td>60 min</td>
+                                    <td>Riley</td>
+                                    <td><button class="book-btn">Book</button></td>
+                                </tr>
+                                <tr>
+                                    <td><span>Strength</span>Pilates</td>
+                                    <td>1:00 pM</td>
+                                    <td>45 min</td>
+                                    <td>Elise</td>
+                                    <td><button class="book-btn">Book</button></td>
+                                </tr>
+                                <tr>
+                                    <td><span>Balance</span>Yoga Flow</td>
+                                    <td>3:00 PM</td>
+                                    <td>30 min</td>
+                                    <td>Maya</td>
+                                    <td><button class="book-btn">Book</button></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div><!--schedule-container ends-->
+        </section>
+    </main>
+            
+    <footer>
+        <!---------FOOTER---------->
+        <section id="footer">
+            <div class="footer-container">
+                <div class="footer brand">
+                    <img src="img/logo2-largewhite.png" alt="IronPulse Logo">
+                    <div class="social-links">
+                        <h1>Keep the pulse</h1>
+                        <ul>
+                            <li><a href="https://www.facebook.com/" data-after="IronPulse Fitness on Facebook"><img src="img/facebook-light.png" alt="Facebook Icon"></a></li>
+                            <li><a href="https://www.instagram.com/" data-after="IronPulse Fitness on Instagram"><img src="img/instagram-light.png" alt="Instagram Icon"></a></li>
+                            <li><a href="https://www.x.com/" data-after="IronPulse Fitness on X"><img src="img/x-twitter-light.png" alt="X Icon"></a></li>
+                        </ul>
+                    </div><!--social-links ends-->
+                </div><!--footer brand ends-->
+                <div class="copyright">
+                    <p>Copyright &copy; <script>document.write(new Date().getFullYear())</script> Christina Symington</p>
+                    <p>All Rights Reserved</p>
+                </div>
+            </div><!--footer-container ends-->
+        </section>
+    </footer>
+              
+    <script type="text/javascript" src="js/script.js"></script>
+    </body>
+</html>

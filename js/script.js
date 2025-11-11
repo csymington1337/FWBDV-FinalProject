@@ -203,3 +203,59 @@ document.addEventListener('DOMContentLoaded', function() {
         document.getElementById('result').scrollIntoView({ behavior: 'smooth', block: 'nearest' });
     }
 });
+
+// Class Schedule Day Toggle
+document.addEventListener('DOMContentLoaded', function() {
+    const dayButtons = document.querySelectorAll('.day-btn');
+    const scheduleDays = document.querySelectorAll('.schedule-day');
+    
+    // Get current day of week (0 = Sunday, 1 = Monday, etc.)
+    const today = new Date().getDay();
+    const daysOfWeek = ['sunday', 'monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday'];
+    const currentDay = daysOfWeek[today];
+    
+    // Function to show schedule for selected day
+    function showDay(dayName) {
+        // Hide all schedule days
+        scheduleDays.forEach(day => {
+            day.style.display = 'none';
+        });
+        
+        // Remove active class from all buttons
+        dayButtons.forEach(btn => {
+            btn.classList.remove('active');
+        });
+        
+        // Show selected day
+        const selectedDay = document.querySelector(`.schedule-day[data-day="${dayName}"]`);
+        if (selectedDay) {
+            selectedDay.style.display = 'block';
+        }
+        
+        // Add active class to clicked button
+        const activeButton = document.querySelector(`.day-btn[data-day="${dayName}"]`);
+        if (activeButton) {
+            activeButton.classList.add('active');
+        }
+    }
+    
+    // Add click event to all day buttons
+    dayButtons.forEach(button => {
+        button.addEventListener('click', function() {
+            const day = this.getAttribute('data-day');
+            showDay(day);
+        });
+    });
+    
+    // Show current day on page load
+    showDay(currentDay);
+    
+    // Book button functionality
+    const bookButtons = document.querySelectorAll('.book-btn');
+    bookButtons.forEach(button => {
+        button.addEventListener('click', function() {
+            alert('Booking functionality coming soon!');
+            // You can replace this with actual booking logic
+        });
+    });
+});
